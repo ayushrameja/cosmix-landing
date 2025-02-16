@@ -1,11 +1,8 @@
 import React from "react";
+import ComingSoon from "./pages/ComingSoon";
 
 const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Hello from cosmix</h1>
-    </div>
-  );
+  return <ComingSoon />;
 };
 
 export default App;

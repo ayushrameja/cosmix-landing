@@ -1,0 +1,102 @@
+.coming-soon {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 70vh;
+    padding: 0 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 900 !important;
+      color: transparent;
+      margin-bottom: 1rem;
+      font-family: "inter-tight", sans-serif;
+      font-weight: 900;
+      background: linear-gradient(to right, #a855f7, #ec4899, #ff5457);
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      @media (min-width: 768px) {
+        margin-bottom: 1.5rem;
+        font-family: "inter-tight", sans-serif;
+        font-weight: 900 !important;
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+      max-width: 35rem;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+      font-family: "inter-tight", sans-serif;
+
+      @media (min-width: 768px) {
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    .subscribe-form {
+      width: 100%;
+      max-width: 25rem;
+      position: relative;
+
+      input {
+        width: 100%;
+        color: #5a5a5a;
+        font-weight: 100;
+        font-size: 1.25rem;
+        border-radius: 0.625rem;
+        padding: 1rem 1.25rem;
+        background-color: #191919;
+        border: 1px solid transparent;
+        transition: border-color 0.3s;
+        font-family: "inter-tight", sans-serif;
+
+        &:focus {
+          outline: none;
+          color: white;
+        }
+      }
+
+      button {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        padding: 0.6rem 0.7rem;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d9d9d9;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        img {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      min-height: 80vh;
+      justify-content: center;
+    }
+  }
+}
