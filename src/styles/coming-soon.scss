@@ -1,7 +1,7 @@
+@import "./_variables";
+
 .coming-soon {
-  background-color: black;
-  min-height: 100vh;
-  color: white;
+  color: $color-white;
 
   .content {
     display: flex;
@@ -9,39 +9,36 @@
     align-items: center;
     justify-content: flex-end;
     min-height: 70vh;
-    padding: 0 1rem;
+    padding: 0 $spacing-base;
     text-align: center;
 
     h1 {
-      font-size: 5rem;
+      font-size: $font-size-5xl;
       font-weight: 900 !important;
-      color: transparent;
-      margin-bottom: 1rem;
-      font-family: "inter-tight", sans-serif;
-      font-weight: 900;
-      background: linear-gradient(to right, #a855f7, #ec4899, #ff5457);
+      margin-bottom: $spacing-base;
+      font-family: $font-family-primary;
       -webkit-background-clip: text;
       background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(to right, #ff0080, #7928ca);
 
-      @media (min-width: 768px) {
-        margin-bottom: 1.5rem;
-        font-family: "inter-tight", sans-serif;
-        font-weight: 900 !important;
-        font-size: 4rem;
+      @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $spacing-lg;
+        font-size: $font-size-4xl;
       }
     }
 
     p {
-      font-size: 1.2rem;
-      color: #d1d5db;
+      font-size: $font-size-lg;
+      color: $color-gray-300;
       max-width: 35rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: $spacing-lg;
       font-weight: 400;
-      font-family: "inter-tight", sans-serif;
+      font-family: $font-family-primary;
 
-      @media (min-width: 768px) {
-        margin-bottom: 2.5rem;
-        font-size: 1.5rem;
+      @media (min-width: $breakpoint-tablet) {
+        margin-bottom: $spacing-2xl;
+        font-size: $font-size-2xl;
       }
     }
 
@@ -52,19 +49,19 @@
 
       input {
         width: 100%;
-        color: #5a5a5a;
+        color: $color-gray-500;
         font-weight: 100;
-        font-size: 1.25rem;
+        font-size: $font-size-xl;
         border-radius: 0.625rem;
-        padding: 1rem 1.25rem;
-        background-color: #191919;
+        padding: $spacing-base $spacing-md;
+        background-color: $color-dark-bg;
         border: 1px solid transparent;
         transition: border-color 0.3s;
-        font-family: "inter-tight", sans-serif;
+        font-family: $font-family-primary;
 
         &:focus {
           outline: none;
-          color: white;
+          color: $color-white;
         }
       }
 

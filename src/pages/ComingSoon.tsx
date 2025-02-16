@@ -1,14 +1,12 @@
 import React from "react";
-
 import "../styles/coming-soon.scss";
 import BellIcon from "../assets/bell.svg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import BackgroundImage from "../components/BackgroundImage";
 
 const ComingSoon: React.FC = () => {
   return (
     <div className="coming-soon">
-      <Navbar />
+      <BackgroundImage />
       <div className="content">
         <h1>Cosmix</h1>
         <p>
@@ -22,7 +20,6 @@ const ComingSoon: React.FC = () => {
           </button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

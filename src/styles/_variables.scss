@@ -1,0 +1,68 @@
+// Colors
+$color-white: white;
+$color-black: black;
+$color-gray-100: #bebebe;
+$color-gray-200: #bbb;
+$color-gray-300: #d1d5db;
+$color-gray-400: #666;
+$color-gray-500: #5a5a5a;
+$color-dark-bg: #191919;
+
+// Gradients
+$gradient-primary: linear-gradient(to right, #a855f7, #ec4899, #ff5457);
+
+// Typography
+$font-family-primary: "inter-tight", sans-serif;
+$font-size-sm: 0.9rem;
+$font-size-base: 1rem;
+$font-size-md: 1.1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-4xl: 4rem;
+$font-size-5xl: 5rem;
+
+// Spacing
+$spacing-xs: 0.4rem;
+$spacing-sm: 0.6rem;
+$spacing-base: 1rem;
+$spacing-md: 1.25rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 2.5rem;
+$spacing-4xl: 4rem;
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin nav-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+  font-size: $font-size-md;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+@mixin gradient-text {
+  color: transparent;
+  background: $gradient-primary;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

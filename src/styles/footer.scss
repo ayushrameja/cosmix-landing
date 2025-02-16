@@ -1,37 +1,29 @@
+@import "./_variables";
+
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
   min-height: 5vh;
-  padding: 1rem 1.5rem;
-  background-color: black;
-  color: white;
-  font-size: 1rem;
+  padding: $spacing-base $spacing-lg;
+  color: $color-white;
+  font-size: $font-size-base;
   font-weight: 400;
-  font-family: "inter-tight", sans-serif;
+  font-family: $font-family-primary;
 
   .footer-links {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    color: #bbb;
+    gap: $spacing-base;
+    color: $color-gray-200;
 
     a {
-      text-decoration: none;
-      color: inherit;
-      transition: color 0.3s ease-in-out;
-      font-size: 1.1rem;
-
-      &:hover {
-        color: white;
-      }
+      @include nav-link;
     }
   }
 
   .footer-copyright {
     p {
-      color: #bebebe;
-      font-size: 1.1rem;
+      color: $color-gray-100;
+      font-size: $font-size-md;
     }
   }
 
