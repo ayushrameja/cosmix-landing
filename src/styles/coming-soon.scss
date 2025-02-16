@@ -17,10 +17,6 @@
       font-weight: 900 !important;
       margin-bottom: $spacing-base;
       font-family: $font-family-primary;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(to right, #ff0080, #7928ca);
 
       @media (min-width: $breakpoint-tablet) {
         margin-bottom: $spacing-lg;
@@ -92,7 +88,7 @@
     }
 
     @media (min-width: 768px) {
-      min-height: 80vh;
+      min-height: 82.5vh;
       justify-content: center;
     }
   }

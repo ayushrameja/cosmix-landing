@@ -3,15 +3,15 @@
 .navbar {
   @include flex-between;
   padding: 0 $spacing-lg;
-  height: 12.5vh;
+  height: 10vh;
   width: 100%;
   color: $color-white;
   position: relative;
 
   .logo {
     img {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
     }
   }
 
